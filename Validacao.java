@@ -10,16 +10,16 @@ public class Validacao {
       calculoPorcentagem.calculaPorcentagem(pessoa);
 
       // Verifico se a pessoa está retornando de viagem
-      if (pessoa.estaRetornandoViagem.equals("SIM")) {
+      if (pessoa.getEstaRetornandoViagem().equals("SIM")) {
         mensagem.imprimirRelatorioFinal(pessoa);
       } else {
 
         // Verifico a porcentagem de infecção
-        if (pessoa.porcentagemInfeccao >= 90) {
-          pessoa.orientacaoFinal = "Paciente crítico! Gentileza aguardar em lockdown por 10 dias para ser acompanhado.";
+        if (pessoa.getPorcentagemInfeccao() >= 90) {
+          pessoa.setOrientacaoFinal("Paciente crítico! Gentileza aguardar em lockdown por 10 dias para ser acompanhado.");
           mensagem.imprimirRelatorioFinal(pessoa);
         } else {
-          pessoa.orientacaoFinal = "Paciente com risco de estar infectado. Gentileza aguardar em lockdown por 02 dias para ser acompanhado.";
+          pessoa.setOrientacaoFinal("Paciente com risco de estar infectado. Gentileza aguardar em lockdown por 02 dias para ser acompanhado.");
           mensagem.imprimirRelatorioFinal(pessoa);
         }
       }

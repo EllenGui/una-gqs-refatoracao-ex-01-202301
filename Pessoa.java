@@ -18,6 +18,54 @@ public class Pessoa {
    
 }
 
+  public String getOrientacaoFinal() {
+    return orientacaoFinal;
+}
+
+public void setOrientacaoFinal(String orientacaoFinal) {
+    this.orientacaoFinal = orientacaoFinal;
+}
+
+public int getPorcentagemInfeccao() {
+    return porcentagemInfeccao;
+}
+
+public void setPorcentagemInfeccao(int porcentagemInfeccao) {
+    this.porcentagemInfeccao = porcentagemInfeccao;
+}
+
+public String getEstaRetornandoViagem() {
+    return estaRetornandoViagem;
+}
+
+public void setEstaRetornandoViagem(String estaRetornandoViagem) {
+    this.estaRetornandoViagem = estaRetornandoViagem;
+}
+
+public String getTeveContatoComPessoasSintomaticas() {
+    return teveContatoComPessoasSintomaticas;
+}
+
+public void setTeveContatoComPessoasSintomaticas(String teveContatoComPessoasSintomaticas) {
+    this.teveContatoComPessoasSintomaticas = teveContatoComPessoasSintomaticas;
+}
+
+public String getTeveSintomasRecentemente() {
+    return teveSintomasRecentemente;
+}
+
+public void setTeveSintomasRecentemente(String teveSintomasRecentemente) {
+    this.teveSintomasRecentemente = teveSintomasRecentemente;
+}
+
+public String getCartaoVacinaEmDia() {
+    return cartaoVacinaEmDia;
+  }
+
+  public void setCartaoVacinaEmDia(String cartaoVacinaEmDia) {
+    this.cartaoVacinaEmDia = cartaoVacinaEmDia;
+  }
+
   public void coletaIdade(Pessoa pessoa, Scanner scanner) {
     System.out.println("\nInforme a sua idade: ");
     idade = scanner.nextInt();
@@ -38,39 +86,39 @@ public class Pessoa {
     this.idade = idade;
   }
   public String getcartaoVacinaEmDia(){
-    return cartaoVacinaEmDia;
+    return getCartaoVacinaEmDia();
   }
   public void setcartaoVacinaEmDia(String cartaoDeVacinaEmDia){
-    this.cartaoVacinaEmDia = cartaoDeVacinaEmDia;
+    this.setCartaoVacinaEmDia(cartaoDeVacinaEmDia);
   }
   public String getteveSintomasRecentemente(){
-    return teveSintomasRecentemente;
+    return getTeveSintomasRecentemente();
   }
   public void setteveSintomasRecentemente(String teveSintomasRecentemente){
-    this.teveSintomasRecentemente = teveSintomasRecentemente;
+    this.setTeveSintomasRecentemente(teveSintomasRecentemente);
   }
   public String getteveContatoComPessoasSintomaticas(){
-    return teveContatoComPessoasSintomaticas;
+    return getTeveContatoComPessoasSintomaticas();
   }
   public void setteveContatoComPessoasSintomaticas(String teveContatoComPessoasSintomaticas){
-    this.teveContatoComPessoasSintomaticas = teveContatoComPessoasSintomaticas;
+    this.setTeveContatoComPessoasSintomaticas(teveContatoComPessoasSintomaticas);
   }
   public String getestaRetornandoViagem(){
-    return estaRetornandoViagem;
+    return getEstaRetornandoViagem();
   }
   public void setestaRetornandoViagem(String estaRetornandoViagem){
-    this.estaRetornandoViagem = estaRetornandoViagem;
+    this.setEstaRetornandoViagem(estaRetornandoViagem);
   }
   public int getporcentagemInfeccao(){
-    return porcentagemInfeccao;
+    return getPorcentagemInfeccao();
   }
   public void setporcentagemInfeccao(int porcentagemInfeccao){
-    this.porcentagemInfeccao = porcentagemInfeccao;
+    this.setPorcentagemInfeccao(porcentagemInfeccao);
   }
   public String getorientacaoFinal(){
-    return orientacaoFinal;
+    return getOrientacaoFinal();
   }
   public void setorientacaoFinal(String orientacaoFinal){
-    this.orientacaoFinal = orientacaoFinal;
+    this.setOrientacaoFinal(orientacaoFinal);
   }
 }
