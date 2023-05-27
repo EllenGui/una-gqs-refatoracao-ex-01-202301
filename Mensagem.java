@@ -6,7 +6,6 @@ public class Mensagem {
     int contador = 0;
     boolean erroTentativas = false;
 
-
     do {
       System.out.println("\nSeu cartão de vacina está em dia? Digite SIM ou NAO ?");
       pessoa.setCartaoVacinaEmDia(scanner.next().toUpperCase());
@@ -25,14 +24,12 @@ public class Mensagem {
     return erroTentativas;
   }
 
-  public boolean realizaPerguntaTeveSintomasRecenmente(Pessoa pessoa, Scanner scanner) {
+  public boolean realizaPerguntaTeveSintomasRecentemente(Pessoa pessoa, Scanner scanner) {
     int contador = 0;
     boolean erroTentativas = false;
 
     do {
-      System.out
-          .println("\nTeve algum dos sintomas recentemente? (dor de cabeça, febre, náusea, dor articular, gripe)" +
-              "Digite SIM ou NAO");
+      System.out.println("\nTeve algum dos sintomas recentemente? (dor de cabeça, febre, náusea, dor articular, gripe)? Digite SIM ou NAO");
       pessoa.setTeveSintomasRecentemente(scanner.next().toUpperCase());
       if (pessoa.getTeveSintomasRecentemente().equals("SIM") || pessoa.getTeveSintomasRecentemente().equals("NAO")) {
         break;
@@ -49,14 +46,12 @@ public class Mensagem {
     return erroTentativas;
   }
 
-  public boolean realizaPerguntaTeveContatoPessoasAssintomaticas(Pessoa pessoa, Scanner scanner) {
+  public boolean realizaPerguntaTeveContatoPessoaSintomaticas(Pessoa pessoa, Scanner scanner) {
     int contador = 0;
     boolean erroTentativas = false;
 
     do {
-      System.out
-          .println("\nTeve contato com pessoas com sintomas gripais nos últimos dias?" +
-              "Digite SIM ou NAO");
+      System.out.println("\nTeve contato com pessoas com sintomas gripais nos últimos dias? Digite SIM ou NAO");
       pessoa.setTeveContatoComPessoasSintomaticas(scanner.next().toUpperCase());
       if (pessoa.getTeveContatoComPessoasSintomaticas().equals("SIM")
           || pessoa.getTeveContatoComPessoasSintomaticas().equals("NAO")) {
@@ -79,9 +74,7 @@ public class Mensagem {
     boolean erroTentativas = false;
 
     do {
-      System.out
-          .println("\nTeve contato com pessoas com sintomas gripais nos últimos dias?" +
-              "Digite SIM ou NAO");
+      System.out.println("\nVocê está retornando de viagem realizada no exterior? Digite SIM ou NAO");
       pessoa.setEstaRetornandoViagem(scanner.next().toUpperCase());
       if (pessoa.getEstaRetornandoViagem().equals("SIM")
           || pessoa.getEstaRetornandoViagem().equals("NAO")) {

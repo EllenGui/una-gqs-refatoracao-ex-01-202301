@@ -37,7 +37,7 @@ public class Validacao {
       erroTentativas = mensagem.realizaPerguntaTeveSintomasRecentemente(pessoa, scanner);
 
     if (erroTentativas == false) {
-      erroTentativas = mensagem.realizaPerguntaTeveContatoPessoasAssintomaticas(pessoa, scanner);
+      erroTentativas = mensagem.realizaPerguntaTeveContatoPessoaSintomaticas(pessoa, scanner);
     }
 
     if (erroTentativas == false) {
