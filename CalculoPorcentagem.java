@@ -6,15 +6,15 @@ public class CalculoPorcentagem {
     }
 
     if (pessoa.getCartaoVacinaEmDia().equals("NAO")) {
-      pessoa.setPorcentagemInfeccao(pessoa.getPorcentagemInfeccao() + 100);
+      pessoa.setPorcentagemInfeccao(pessoa.getPorcentagemInfeccao() + 10);
     }
 
     if (pessoa.getTeveSintomasRecentemente().equals("SIM")) {
-      pessoa.setPorcentagemInfeccao(pessoa.getPorcentagemInfeccao() + 300);
+      pessoa.setPorcentagemInfeccao(pessoa.getPorcentagemInfeccao() + 30);
     }
 
     if (pessoa.getTeveContatoComPessoasSintomaticas().equals("SIM")) {
-      pessoa.setPorcentagemInfeccao(pessoa.getPorcentagemInfeccao() + 300);
+      pessoa.setPorcentagemInfeccao(pessoa.getPorcentagemInfeccao() + 30);
     }
   }
 }
